@@ -1,0 +1,70 @@
+/* -----about-top----- */
+.about-top {
+  background: url(/photos/about-top.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 6.5rem;
+  padding: 13% 20% 17% 20%;
+}
+
+.about-top .container {
+  margin: 0 auto 2rem auto;
+  padding: 30px;
+  box-shadow: 0px 0px 20px #0000003b;
+  background-color: rgba(243, 243, 243, 0.8);
+  border-radius: 6px;
+}
+
+.about-top img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* -----about-1----- */
+.about-1 {
+  margin: 3rem 2rem;
+  padding: 2rem 5rem;
+  background-color: rgb(255, 249, 233);
+}
+
+.about-1 p {
+  line-height: 1.8rem;
+}
+
+.about-1:hover {
+  background-color: rgb(255, 243, 211);
+}
+
+/* -----about-2----- */
+.about-2 {
+  margin: 3rem 0rem 2rem 0rem;
+}
+
+.about-2 h1 {
+  margin: 0 1rem;
+}
+
+.about-2 p {
+  font-size: 18px;
+  color: rgb(39, 39, 39);
+}
+
+.shape1 {
+  background: rgba(255, 186, 58, 0.9);
+  width: 17rem;
+  padding: 2.5rem;
+  margin: 1rem 0.8rem;
+  border-radius: 2px;
+  box-shadow: 1px 0px 10px 0px rgba(180, 180, 180, 0.959);
+  line-height: 1.8rem;
+}
+
+.shape2 {
+  background: rgba(180, 180, 180, 0.8);
+  width: 17rem;
+  padding: 2.5rem;
+  margin: 1rem;
+  border-radius: 2px;
+  box-shadow: 2px 0px 10px 0px rgba(221, 123, 11, 0.479);
+  line-height: 1.8rem;
+}

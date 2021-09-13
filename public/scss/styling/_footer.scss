@@ -1,0 +1,56 @@
+/* -----footer----- */
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: url(../photos/footer-back.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1vmin 1vmin 0.5vmin 1vmin;
+  /* margin-top: 2rem; */
+}
+
+footer .row {
+  border: 1px solid rgb(252, 226, 193);
+  background-color: rgba(250, 235, 215, 0.7);
+  border-radius: 5px;
+  padding: 1.2rem 0 3px 3rem;
+  margin-bottom: 5px;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+footer h6 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: rgb(107, 106, 106);
+}
+
+footer ul {
+  padding-left: 19px;
+  list-style-type: circle;
+  line-height: 24px;
+  font-size: 15px;
+  color: orange;
+}
+
+footer span {
+  font-size: 14.5px;
+}
+
+footer a {
+  color: orange;
+}
+
+footer a:hover {
+  color: orange;
+}
+
+footer p {
+  margin-bottom: 4px;
+  line-height: 24px;
+}

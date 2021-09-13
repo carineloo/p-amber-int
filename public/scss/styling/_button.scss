@@ -1,0 +1,42 @@
+/* -----button----- */
+.my-btn {
+  background-color: rgba(252, 176, 35, 0.8);
+  color: white;
+  padding: .7em 2em;
+  border: 1px solid;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-back::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(255, 171, 16);
+  border-radius: 3px;
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  /* transform-origin: left; */
+}
+
+.btn-back:hover::before,
+.btn-back:focus::before {
+  transform: scaleX(1);
+}
+
+.btn-back {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+
+.btn-back:hover,
+.btn-back:focus {
+  color: rgb(124, 124, 124);
+}

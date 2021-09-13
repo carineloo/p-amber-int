@@ -1,0 +1,54 @@
+/* -----career-top----- */
+.career-top {
+  background: url(/photos/career-top.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 25% 35%;
+}
+
+.career-top .container {
+  margin: 0 auto 2rem auto;
+  padding: 30px 10px;
+  box-shadow: 0px 0px 20px #0000003b;
+  background-color: rgba(243, 243, 243, 0.9);
+  border-radius: 6px;
+}
+
+/* -----career-1----- */
+.career-1 {
+  margin: 4rem 2rem 2rem 2rem;
+  position: relative;
+}
+
+.career-1 .container {
+  width: 110%;
+  box-shadow: 0px 0px 15px #00000071;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 2rem 6.2rem 2rem 2.8rem;
+}
+
+.career-1 .pic {
+  position: absolute;
+  top: 50px;
+  left: -70px;
+  width: 115%;
+  max-width: 450px;
+  z-index: -1;
+}
+
+.career-1 h1 {
+  font-size: 32px;
+  margin-bottom: 0.8rem;
+}
+
+.career-1 h5 {
+  margin-top: 0.5rem;
+}
+
+.career-1 ul {
+  padding-left: 20px;
+  list-style-type: circle;
+  font-size: 15px;
+  color: rgb(107, 106, 106);
+}
