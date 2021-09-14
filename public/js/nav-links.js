@@ -3,7 +3,7 @@ class MyHome extends HTMLElement {
     this.innerHTML = `    
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
     <div class="container-fluid p-0">
-      <a class="navbar-brand" id="logo" href="home.html"> 
+      <a class="navbar-brand" id="logo" href="/"> 
         <img src="../photos/logo.png" alt="logo" width="95"  class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,7 @@ class MyHome extends HTMLElement {
         <!-- nav pages -->
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link hoverable active" href="home.html">Home</a>
+            <a class="nav-link hoverable active" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hoverable" href="about.html">About</a>
@@ -45,7 +45,7 @@ class MyAbout extends HTMLElement {
     this.innerHTML = `    
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
     <div class="container-fluid p-0">
-      <a class="navbar-brand" id="logo" href="home.html"> 
+      <a class="navbar-brand" id="logo" href="/"> 
         <img src="../photos/logo.png" alt="logo" width="95"  class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@ class MyAbout extends HTMLElement {
         <!-- nav pages -->
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link hoverable" href="home.html">Home</a>
+            <a class="nav-link hoverable" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hoverable active" href="about.html">About</a>
@@ -87,7 +87,7 @@ class MyValues extends HTMLElement {
     this.innerHTML = `    
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
     <div class="container-fluid p-0">
-      <a class="navbar-brand" id="logo" href="home.html"> 
+      <a class="navbar-brand" id="logo" href="/"> 
         <img src="../photos/logo.png" alt="logo" width="95"  class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,7 +97,7 @@ class MyValues extends HTMLElement {
         <!-- nav pages -->
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link hoverable" href="home.html">Home</a>
+            <a class="nav-link hoverable" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hoverable" href="about.html">About</a>
@@ -129,7 +129,7 @@ class MyEvents extends HTMLElement {
     this.innerHTML = `    
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
     <div class="container-fluid p-0">
-      <a class="navbar-brand" id="logo" href="home.html"> 
+      <a class="navbar-brand" id="logo" href="/"> 
         <img src="../photos/logo.png" alt="logo" width="95"  class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,7 +139,7 @@ class MyEvents extends HTMLElement {
         <!-- nav pages -->
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link hoverable" href="home.html">Home</a>
+            <a class="nav-link hoverable" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hoverable" href="about.html">About</a>
@@ -171,7 +171,7 @@ class MyCareer extends HTMLElement {
     this.innerHTML = `    
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
     <div class="container-fluid p-0">
-      <a class="navbar-brand" id="logo" href="home.html"> 
+      <a class="navbar-brand" id="logo" href="/"> 
         <img src="../photos/logo.png" alt="logo" width="95"  class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -181,7 +181,7 @@ class MyCareer extends HTMLElement {
         <!-- nav pages -->
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link hoverable" href="home.html">Home</a>
+            <a class="nav-link hoverable" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hoverable" href="about.html">About</a>
@@ -213,7 +213,7 @@ class MyContact extends HTMLElement {
     this.innerHTML = `    
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
     <div class="container-fluid p-0">
-      <a class="navbar-brand" id="logo" href="home.html"> 
+      <a class="navbar-brand" id="logo" href="/"> 
         <img src="../photos/logo.png" alt="logo" width="95"  class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -223,7 +223,7 @@ class MyContact extends HTMLElement {
         <!-- nav pages -->
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link hoverable" href="home.html">Home</a>
+            <a class="nav-link hoverable" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hoverable" href="about.html">About</a>
