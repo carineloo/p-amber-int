@@ -231,14 +231,14 @@ footer {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 1vmin 1vmin 0.5vmin 1vmin;
+  padding: 1vmin 0vmin 0.5vmin 0vmin;
   /* margin-top: 2rem; */
 }
 
 footer .row {
   border: 1px solid #fce2c1;
   background-color: rgba(250, 235, 215, 0.7);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 1.2rem 0 3px 3rem;
   margin-bottom: 5px;
 }
@@ -367,6 +367,42 @@ footer p {
 .about-top img {
   width: 100%;
   max-width: 250px;
+}
+
+/* -----reena----- */
+.reena {
+  margin: 4rem 1rem 2rem 1rem;
+  position: relative;
+}
+
+.reena .container {
+  width: 110%;
+  box-shadow: 0px 0px 7px #0000006e;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 2.8rem 2rem 2.8rem;
+}
+
+.reena .pic {
+  position: absolute;
+  width: 112%;
+  max-width: 450px;
+  left: -50px;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.reena h1 {
+  font-size: 32px;
+  margin-bottom: 0.8rem;
+}
+
+.reena h5 {
+  margin-top: 0.5rem;
+}
+
+.reena p {
+  text-align: justify;
 }
 
 /* -----about-1----- */
@@ -802,6 +838,24 @@ button[type="submit"]:hover {
   .values-top {
     background-attachment: scroll;
   }
+  .reena {
+    margin: 2rem;
+    margin-right: 3.5rem;
+  }
+  .reena .container {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    padding-top: 15rem;
+    background: none;
+  }
+  .reena .pic {
+    border-radius: 4px;
+    left: -28px;
+  }
+  .reena h5 {
+    margin-top: 0.4rem;
+  }
   .about-2 {
     margin-bottom: 1rem;
   }
@@ -823,7 +877,7 @@ button[type="submit"]:hover {
     padding: 2rem 1rem;
   }
   .career-top {
-    background: url(../photos/career-top-iPad.jpeg);
+    background: url(/photos/career-top-iPad.jpeg);
     background-size: cover;
     position: top;
     padding: 22% 35%;
@@ -952,7 +1006,7 @@ button[type="submit"]:hover {
     padding: 4% 0 2% 0;
   }
   .values-top {
-    background: url(../photos/values-phone-top.jpeg);
+    background: url(/photos/values-phone-top.jpeg);
     background-size: cover;
     background-attachment: scroll;
     margin-top: 2rem;
@@ -982,15 +1036,25 @@ button[type="submit"]:hover {
     padding: 2rem;
     margin: 1rem 0rem 10px 0rem;
   }
+  .values-2 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .values-2 .container {
-    margin: 0.5rem 1.8rem;
-    padding: 1rem 1.3rem 1rem 1.5rem;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    background: none;
   }
   .values-2 h5 {
-    margin-top: 1rem;
+    margin-top: 0;
   }
   .values-2 ul {
     line-height: 24px;
+  }
+  .values-2:before {
+    background: none;
   }
   .events-top {
     background-attachment: scroll;
@@ -1005,7 +1069,7 @@ button[type="submit"]:hover {
     font-size: 15px;
   }
   .career-top {
-    background: url(../photos/career-top.png);
+    background: url(/photos/career-top.png);
     background-size: cover;
     margin-top: 3rem;
     background-position: 1% 0;

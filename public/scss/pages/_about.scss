@@ -20,6 +20,42 @@
   max-width: 250px;
 }
 
+/* -----reena----- */
+.reena {
+  margin: 4rem 1rem 2rem 1rem;
+  position: relative;
+}
+
+.reena .container {
+  width: 110%;
+  box-shadow: 0px 0px 7px #0000006e;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 2.8rem 2rem 2.8rem;
+}
+
+.reena .pic {
+  position: absolute;
+  width: 112%;
+  max-width: 450px;
+  left: -50px;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.reena h1 {
+  font-size: 32px;
+  margin-bottom: 0.8rem;
+}
+
+.reena h5 {
+  margin-top: 0.5rem;
+}
+
+.reena p {
+  text-align: justify;
+}
+
 /* -----about-1----- */
 .about-1 {
   margin: 3rem 2rem;
