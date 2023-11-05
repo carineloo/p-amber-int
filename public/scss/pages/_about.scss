@@ -151,15 +151,15 @@
     }
     .about-top h1 {
         font-size: 35px;
+        margin-bottom: 1rem;
     }
     .about h1,
     .about-1 h1,
     .about-2 h1 {
         font-size: 30px;
     }
-    .about-top img {
-        width: 100px;
-        margin-bottom: 2rem;
+    .about-top .show-logo {
+        display: none;
     }
     .reena {
         margin: 1rem;

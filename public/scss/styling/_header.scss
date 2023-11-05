@@ -6,7 +6,6 @@
   width: 100%;
   z-index: 999;
   background: rgba(243, 243, 243, 0.986);
-//   border-bottom: 8px solid rgb(253, 203, 111);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
 }
@@ -119,4 +118,11 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar-nav {
+        margin-right: 0;
+      }
 }
