@@ -282,13 +282,17 @@ footer .small-links .row {
   margin: 0;
 }
 
-footer .col-5, footer .col {
-  padding: 0;
+footer .col-5,
+footer .col {
+  padding: 0 7px;
 }
 
-@media screen and (max-width: 390px) {
-  .pages-links {
-    display: none !important;
+@media screen and (max-width: 400px) {
+  footer .col-4 {
+    display: none;
+  }
+  footer .pages-links {
+    display: none;
   }
   footer .row {
     padding: 1rem;
@@ -299,7 +303,8 @@ footer .col-5, footer .col {
   footer p {
     font-size: 14px;
   }
-  footer .col-5, footer .col {
+  footer .col-5,
+  footer .col {
     padding: 4px 8px;
   }
 }
@@ -812,7 +817,7 @@ footer .col-5, footer .col {
 
 /* -----career-1----- */
 .career-1 {
-  margin: 4rem 2rem 2rem 2rem;
+  margin: 2rem;
   position: relative;
 }
 
@@ -821,7 +826,8 @@ footer .col-5, footer .col {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   margin-left: 4rem;
-  padding: 2rem 4rem;
+  padding: 2rem;
+  max-width: 600px;
 }
 
 .career-1 .pic {
@@ -848,6 +854,16 @@ footer .col-5, footer .col {
   list-style-type: circle;
   font-size: 15px;
   color: #6b6a6a;
+}
+
+@media screen and (max-width: 1180px) {
+  .career-1 .container {
+    width: 160%;
+    margin: auto 0;
+  }
+  .career-1 .pic {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px) {
