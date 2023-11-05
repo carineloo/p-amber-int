@@ -64,13 +64,17 @@ footer .col {
     padding: 0 7px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
     footer .col-4 {
         display: none;
     }
     footer .pages-links {
         display: none;
     }
+}
+
+@media screen and (max-width: 400px) {
+ 
     footer .row {
         padding: 1rem;
     }

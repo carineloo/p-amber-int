@@ -1,5 +1,9 @@
 /* -----about-top----- */
 
+.about-page {
+    overflow-x: hidden;
+}
+
 .about-top {
     background: url(/photos/orange-back.jpg);
     background-size: cover;
@@ -69,6 +73,7 @@
 .reena h1 {
     font-size: 32px;
     margin-bottom: 0.8rem;
+    overflow-y: hidden;
 }
 
 .reena h5 {
@@ -143,6 +148,40 @@
     box-shadow: 2px 0px 10px 0px rgba(221, 123, 11, 0.479);
     line-height: 1.8rem;
 }
+@media screen and (max-width: 1180px) {
+    .about-top {
+        padding: 2rem 3rem;
+        background-size: contain;
+    }
+    .about-top h1 {
+        font-size: 35px;
+        margin-bottom: 1rem;
+        overflow-y: hidden;
+    }
+    .about h1,
+    .about-1 h1,
+    .about-2 h1 {
+        font-size: 30px;
+        overflow-y: hidden;
+    }
+    .about-top .show-logo {
+        display: none;
+    }
+    .reena {
+        margin: 2rem .5rem;
+    }
+    .reena .pic {
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .reena .container {
+        width: 100%;
+        box-shadow: none;
+        padding: 1rem;
+        margin-left: 0;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .about-top {
@@ -152,11 +191,13 @@
     .about-top h1 {
         font-size: 35px;
         margin-bottom: 1rem;
+        overflow-y: hidden;
     }
     .about h1,
     .about-1 h1,
     .about-2 h1 {
         font-size: 30px;
+        overflow-y: hidden;
     }
     .about-top .show-logo {
         display: none;

@@ -1,5 +1,9 @@
 /* -----events-top----- */
 
+.events-page {
+    overflow-x: hidden;
+}
+
 .events-top {
     margin-top: 160px;
     margin-bottom: 2rem;
@@ -26,6 +30,12 @@
 
 /* -----events-1----- */
 
+.lodgements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .events-1 {
     margin: 2rem 20rem;
 }
@@ -49,6 +59,14 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1180px) {
+    .events-1 {
+        margin: 2rem 5rem;
+    }
+    .event-title {
+        margin: .75rem 2rem;
+    }
+}
 @media screen and (max-width: 400px) {
     .events-top {
         margin-top: 110px;
@@ -64,5 +82,8 @@
     }
     .events-1 {
         margin: 2rem;
+    }
+    .events-1 h5 {
+        font-size: 16px;
     }
 }
