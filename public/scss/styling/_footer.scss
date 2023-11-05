@@ -11,7 +11,7 @@ footer .row {
   border: 1px solid rgb(252, 226, 193);
   background-color: rgba(250, 235, 215, 0.7);
   border-radius: 3px;
-  padding: 1.2rem 0 3px 3rem;
+  padding: 1.5rem 2.25rem;
   margin-bottom: 5px;
 }
 
@@ -51,12 +51,32 @@ footer p {
   line-height: 24px;
 }
 
+footer .small-links .row {
+    border: none;
+    background-color: rgba(250, 235, 215, 0);
+    padding: 0;
+    margin: 0;
+}
+
+footer .col-5, footer .col {
+    padding: 0;
+}
+
 @media screen and (max-width: 390px) {
     .pages-links {
-        display: none;
+        display: none !important;
     }
     footer .row {
         padding: 1rem;
         
+    }
+    footer h4 {
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    footer .col-5, footer .col {
+        padding: 4px 8px;
     }
 }
