@@ -3,14 +3,12 @@
 * {
   box-sizing: border-box;
   font-family: 'Source Serif Pro', serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  position: relative;
-  padding-bottom: 346px;
-  min-height: 100vh;
+  margin: 0;
 }
 
 h1 {
@@ -119,7 +117,6 @@ p {
   width: 100%;
   z-index: 999;
   background: rgba(243, 243, 243, 0.986);
-  border-bottom: 8px solid #fdcb6f;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
 }
@@ -225,14 +222,6 @@ p {
 /* -----footer----- */
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: url(/photos/footer-back.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 1vmin 0vmin 0.5vmin 0vmin;
-  /* margin-top: 2rem; */
 }
 
 footer .row {
@@ -279,20 +268,25 @@ footer p {
   line-height: 24px;
 }
 
+@media screen and (max-width: 390px) {
+  .pages-links {
+    display: none;
+  }
+  footer .row {
+    padding: 1rem;
+  }
+}
+
 /* index-top */
 .index-top {
-  background: url(/photos/index-1-top.jpeg) no-repeat;
+  background: url(/photos/orange-back.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 6.2rem;
-  padding: 6.5% 20% 13% 20%;
+  padding: 6.5% 20% 10% 20%;
 }
 
 .back {
-  /* background: url(/photos/back1.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
   /* top layer */
   margin: 6% auto;
   box-shadow: 0px 0px 20px #00000034;
@@ -308,7 +302,6 @@ footer p {
   font-size: 350%;
   margin: 0 0.8rem;
   background-image: url(/photos/index-title-back.jpeg);
-  background-position: center;
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
@@ -346,25 +339,73 @@ footer p {
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 400px) {
+  .index-top {
+    padding: 1rem;
+  }
+  .index-1 .panel h1 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+  .hero {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .hero h1 {
+    font-size: 250%;
+  }
+  .hero p {
+    margin-bottom: 1rem;
+  }
+  .index-1 {
+    margin: 2rem 1rem;
+  }
+  .index-1 .pic {
+    display: none;
+  }
+  .index-1 .panel {
+    padding: 2rem 1.5rem .5rem 1.5rem;
+  }
+}
+
 /* -----about-top----- */
 .about-top {
-  background: url(/photos/about-top.jpeg);
+  background: url(/photos/orange-back.jpg);
   background-size: cover;
   background-attachment: fixed;
-  padding: 15% 30% 15% 30%;
+  margin-top: 100px;
+  padding: 5rem 0;
+}
+
+.about-top h1 {
+  margin-bottom: 1.5rem;
 }
 
 .about-top .container {
-  margin: 0 auto 2rem auto;
-  padding: 30px;
+  max-width: 800px;
+  padding: 2rem;
   box-shadow: 0px 0px 20px #0000003b;
   background-color: rgba(243, 243, 243, 0.8);
   border-radius: 6px;
 }
 
+.about-top .row {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-top .row p {
+  text-align: justify;
+}
+
+.about-top .show-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-top img {
-  width: 100%;
-  max-width: 250px;
+  width: 180px;
+  height: fit-content;
 }
 
 /* -----reena----- */
@@ -383,10 +424,11 @@ footer p {
 
 .reena .pic {
   position: absolute;
-  width: 112%;
+  width: 100%;
   max-width: 450px;
   left: -50px;
   border-radius: 2px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
   z-index: -1;
 }
 
@@ -404,19 +446,26 @@ footer p {
   text-align: justify;
 }
 
+/* -----about------ */
+.about {
+  background-color: #f4edea;
+  padding: 1rem 0;
+}
+
+#pic-chart {
+  width: 80%;
+}
+
 /* -----about-1----- */
 .about-1 {
-  margin: 3rem 2rem;
-  padding: 2rem 5rem;
-  background-color: #fff9e9;
+  margin: 3rem 5rem;
+  padding: 2rem 4rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
 .about-1 p {
   line-height: 1.8rem;
-}
-
-.about-1:hover {
-  background-color: #fff3d3;
+  margin-bottom: 0;
 }
 
 /* -----about-2----- */
@@ -431,6 +480,7 @@ footer p {
 .about-2 p {
   font-size: 18px;
   color: #272727;
+  margin-bottom: 0;
 }
 
 .shape1 {
@@ -453,17 +503,67 @@ footer p {
   line-height: 1.8rem;
 }
 
+@media screen and (max-width: 400px) {
+  .about-top {
+    padding: 2rem 1rem;
+    background-size: contain;
+  }
+  .about-top h1 {
+    font-size: 35px;
+  }
+  .about h1,
+  .about-1 h1,
+  .about-2 h1 {
+    font-size: 30px;
+  }
+  .about-top img {
+    width: 100px;
+    margin-bottom: 2rem;
+  }
+  .reena {
+    margin: 1rem;
+  }
+  .reena .pic {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .reena .container {
+    width: 100%;
+    box-shadow: none;
+    padding: 1rem;
+  }
+  #pic-chart {
+    width: 95%;
+  }
+  .about-1 {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  .about-1 p {
+    text-align: justify;
+  }
+  .about-2 p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .shape1,
+  .shape2 {
+    padding: 1rem 1.5rem;
+  }
+}
+
 /* -----values-top----- */
 .values-top {
-  background: url(/photos/values-top.jpeg);
+  background: url(/photos/orange-back.jpg);
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 6.8rem;
-  padding: 18% 30% 18% 30%;
+  margin-top: 100px;
+  padding: 5rem 0;
 }
 
 .values-top .container {
-  padding: 3.5rem 0 3.5rem 0;
+  padding: 3.5rem 0;
   box-shadow: 0px 0px 20px #00000073;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 5px;
@@ -471,9 +571,6 @@ footer p {
 
 /* -----values-1----- */
 .values-1 {
-  background: url(/photos/values-main-1.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 3rem 2rem;
@@ -554,26 +651,75 @@ footer p {
   color: #6b6a6a;
 }
 
-/* -----events-top----- */
-.events-top {
-  background: url(/photos/events-top.png);
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: 6.2rem;
-  padding: 18% 30% 18% 30%;
+@media screen and (max-width: 400px) {
+  .values-top {
+    padding: 2rem 1rem;
+    background-size: contain;
+  }
+  .values-top h1 {
+    font-size: 35px;
+  }
+  .values-top .container {
+    padding: 1rem;
+  }
+  .values-1 h1 {
+    font-size: 25px;
+  }
+  .values-1 h5 {
+    font-size: 18px;
+  }
+  .values-1 {
+    margin: .25rem 1rem;
+    padding: 1rem;
+  }
+  .values-1 .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .values-2:before {
+    display: none;
+  }
+  .head-3 {
+    margin: 0rem;
+    padding: 2rem 3rem 2rem 2rem;
+  }
+  .head-3 h1 {
+    font-size: 30px;
+  }
+  .values-2 .container {
+    margin: 0rem;
+    padding: 1rem 2.5rem;
+    box-shadow: none;
+  }
 }
 
-.events-top .container {
-  margin: 0 auto 2rem auto;
-  padding: 3rem 0 3rem 0;
+/* -----events-top----- */
+.events-top {
+  margin-top: 160px;
+  margin-bottom: 2rem;
+}
+
+.event-title {
   box-shadow: 0px 0px 20px #0000003b;
-  background-color: rgba(243, 243, 243, 0.8);
+  background-color: #f4edea;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+  padding: 2rem;
+}
+
+.vid1 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  height: 400px;
 }
 
 /* -----events-1----- */
 .events-1 {
-  margin: 2rem 20%;
+  margin: 2rem 20rem;
 }
 
 .events-1 .notice {
@@ -592,18 +738,34 @@ footer p {
 }
 
 .events-1 img {
-  /* display: block;
-  margin: 0 auto; */
   width: 100%;
-  /* max-width: 600px; */
+}
+
+@media screen and (max-width: 400px) {
+  .events-top {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  .event-title {
+    margin: 2rem;
+    margin-bottom: 1rem;
+  }
+  .vid1 {
+    height: 200px;
+  }
+  .events-1 {
+    margin: 2rem;
+  }
 }
 
 /* -----career-top----- */
 .career-top {
-  background: url(/photos/career-top.jpeg);
+  background: url(/photos/orange-back.jpg);
   background-size: cover;
   background-attachment: fixed;
-  padding: 20% 30% 20% 30%;
+  margin-top: 100px;
+  padding: 5rem 0;
 }
 
 .career-top .container {
@@ -611,6 +773,10 @@ footer p {
   box-shadow: 0px 0px 20px #00000073;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
+}
+
+.career-top p {
+  margin-bottom: 2rem;
 }
 
 /* -----career-1----- */
@@ -629,11 +795,12 @@ footer p {
 
 .career-1 .pic {
   position: absolute;
-  top: 50px;
+  top: 55px;
   left: -70px;
   width: 115%;
   max-width: 450px;
   z-index: -1;
+  margin-bottom: 2rem;
 }
 
 .career-1 h1 {
@@ -652,17 +819,40 @@ footer p {
   color: #6b6a6a;
 }
 
+@media screen and (max-width: 400px) {
+  .career-top {
+    padding: 2rem 1rem;
+    background-size: contain;
+  }
+  .career-top h1 {
+    font-size: 35px;
+  }
+  .career-1 {
+    margin: 1rem;
+  }
+  .career-1 h1 {
+    font-size: 30px;
+  }
+  .career-1 .container {
+    width: 100%;
+    padding: .5rem;
+    box-shadow: none;
+  }
+  .career-1 .pic {
+    display: none;
+  }
+}
+
 /* -----contact-top----- */
 .contact-top {
-  background: url(/photos/contact-top.jpeg);
+  background: url(/photos/orange-back.jpg);
   background-attachment: fixed;
   background-size: cover;
-  margin-top: 6.5rem;
-  padding: 14% 30% 14% 30%;
+  margin-top: 100px;
+  padding: 5rem 0;
 }
 
 .contact-top .container {
-  max-width: 550px;
   margin: 0 auto 2rem auto;
   padding: 60px 35px;
   box-shadow: 0px 0px 20px #0000003b;
@@ -671,12 +861,7 @@ footer p {
 }
 
 .contact-top h1 {
-  margin-bottom: 1rem;
-}
-
-.contact-top .primary-btn {
-  margin-top: 20px;
-  padding: 0.5rem 2.5rem;
+  margin-bottom: 3rem;
 }
 
 /* -----contact-form----- */
@@ -710,11 +895,14 @@ footer p {
   padding-top: 1.5rem;
 }
 
+.contact-form .content h1 {
+  margin-bottom: 1.5rem;
+}
+
 .contact-form .container {
-  width: 75%;
-  max-width: 90%;
+  width: 60%;
   margin: 0 auto;
-  padding: 30px 30px 15px 30px;
+  padding: 2rem 4rem;
   box-shadow: 0px 0px 20px #00000020;
   background-color: rgba(243, 243, 243, 0.904);
   border-radius: 4px;
@@ -809,310 +997,30 @@ button[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  body {
-    padding-bottom: 400px;
-    overflow-x: hidden;
-  }
-  .index-top {
-    background-attachment: scroll;
-  }
-  .hero {
-    padding: 4vmin 0;
-  }
-  .index-1 .pic {
-    width: 80%;
-  }
-  .about-top,
-  .values-top {
-    background-attachment: scroll;
-  }
-  .reena {
-    margin: 2rem;
-    margin-right: 3.5rem;
-  }
-  .reena .container {
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    padding-top: 15rem;
-    background: none;
-  }
-  .reena .pic {
-    border-radius: 4px;
-    left: -28px;
-  }
-  .reena h5 {
-    margin-top: 0.4rem;
-  }
-  .about-2 {
-    margin-bottom: 1rem;
-  }
-  .shape1,
-  .shape2 {
-    width: 15rem;
-  }
-  .values-top {
-    padding: 6% 0 4% 0;
-  }
-  .values-top .container {
-    padding: 4rem 0 9rem 0;
-  }
-  #text {
-    padding-top: 15rem;
-    font-size: 40px;
-  }
-  .values-2 .container {
-    padding: 2rem 1rem;
-  }
-  .career-top {
-    background: url(/photos/career-top-iPad.jpeg);
-    background-size: cover;
-    position: top;
-    padding: 22% 35%;
-  }
-  .career-1 {
-    margin: 2rem;
-  }
-  .career-1 .container {
-    width: 120%;
-    padding: 2rem 5rem 1.3rem 2.2rem;
-  }
-  .career-1 .pic {
-    top: 70px;
-    left: 1px;
-    width: 110%;
-  }
-  .career-1 h5 {
-    margin-top: 0.4rem;
-  }
-  .career-1 ul {
-    padding-left: 20px;
-    line-height: 22px;
-    list-style-type: circle;
-    font-size: 17px;
-    color: #6b6a6a;
-  }
-  .index-1 .panel {
-    border: 1px solid orange;
-    background: white;
-    border-radius: 3px;
-    padding: 8vmin 5vmin 9vmin 6vmin;
-    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
-  }
-  .shape1 {
-    padding: 1.5rem;
-    padding-bottom: 1rem;
-  }
-  .shape2 {
-    padding: 1.5rem;
-    padding-bottom: 1rem;
-  }
-  footer .row {
-    background-color: antiquewhite;
-    padding: 2rem 0 1rem 1rem;
-  }
-}
-
-@media screen and (max-width: 884px) {
-  body {
-    padding-bottom: 700px;
-    overflow-x: hidden;
-  }
-  .index-top {
-    margin-top: 1rem;
-    padding: 8px 16px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  .navbar-nav {
-    margin-right: 0;
-  }
-  .back {
-    margin: 130px 1rem 25px 1rem;
-  }
-  .hero {
-    padding: 8vmin 0 10vmin 0;
-  }
-  .hero h1 {
-    font-size: 250%;
-    padding: 0 1.5rem;
-  }
-  .hero p {
-    padding: 2vmin 6vmin 1vmin 6vmin;
-  }
-  .index-1 {
-    margin: 2rem 0 4rem 0;
-  }
-  /* .index-1 .line-1 {
-    width: 1000px;
-    border-bottom: 260px solid rgba(245, 245, 245, 0.5);
-    -webkit-transform:
-        translateY(20px)
-        translateX(5px)
-        rotate(-38deg);
-    position: absolute;
-    top: 850px;
-    left: -200px;
-  } */
-  .index-1 .pic {
-    max-width: 200px;
-    max-height: 300px;
-    margin-bottom: 1rem;
-    border-radius: 1px;
-  }
-  .index-1 .panel {
-    margin: 0.7rem 1rem 0 1rem;
-    border-radius: 2px;
-    padding: 2rem 1.5rem 0.5rem 1.5rem;
-    background: rgba(255, 255, 255, 0.95);
-  }
-  .index-1 .panel h1 {
-    margin-bottom: 1.5rem;
-  }
-  .index-1 .panel p {
-    margin-bottom: 2rem;
-  }
-  .about-top {
-    margin-top: 6rem;
-    padding: 2.5rem 1.5rem 0.5rem 1.5rem;
-  }
-  .about-top img {
-    margin-top: 8%;
-  }
-  .about-1 {
-    margin: 2rem 1rem 1rem 1rem;
-    padding: 2rem 1rem;
-  }
-  .about-1 p {
-    line-height: 1.5rem;
-  }
-  .about-2 {
-    margin-top: 1.2rem;
-  }
-  .values-top {
-    padding: 4% 0 2% 0;
-  }
-  .values-top {
-    background: url(/photos/values-phone-top.jpeg);
-    background-size: cover;
-    background-attachment: scroll;
-    margin-top: 2rem;
-    padding: 3rem 0 0.6rem 0;
-  }
-  .values-top .container {
-    padding: 2rem 0 3rem 0;
-  }
-  #text {
-    padding-top: 11rem;
-    font-size: 40px;
-  }
-  .values-2 {
-    padding: 1.8rem;
-  }
-  .values-2 .container {
-    padding: 1.5rem 0.7rem;
-    margin: 8px;
-  }
-  .values-2 h5 {
-    font-size: 15px;
-  }
-  .values-2 h1 {
-    text-align: center;
-  }
-  .head-3 {
-    padding: 2rem;
-    margin: 1rem 0rem 10px 0rem;
-  }
-  .values-2 {
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .values-2 .container {
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    background: none;
-  }
-  .values-2 h5 {
-    margin-top: 0;
-  }
-  .values-2 ul {
-    line-height: 24px;
-  }
-  .values-2:before {
-    background: none;
-  }
-  .events-top {
-    background-attachment: scroll;
-    margin: 5.8rem 0 2rem 0;
-    padding: 13% 18%;
-  }
-  .events-top .container {
-    margin: 0 auto 1rem auto;
-    padding: 20px;
-  }
-  .events-1 h5 {
-    font-size: 15px;
-  }
-  .career-top {
-    background: url(/photos/career-top.png);
-    background-size: cover;
-    margin-top: 3rem;
-    background-position: 1% 0;
-    padding: 30% 10% 15% 10%;
-  }
-  .career-top .container {
-    margin: 0 auto;
-    margin-top: 3rem;
-  }
-  .career-1 {
-    margin: 1rem;
-    position: relative;
-  }
-  .career-1 .container {
-    width: 100%;
-    padding: 1.5rem 1.8rem 1rem 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-  .career-1 .pic {
-    left: -999px;
-  }
-  .career-1 h1 {
-    font-size: 28px;
-    margin-bottom: 2px;
-  }
-  .career-1 h5 {
-    margin-top: 0.2rem;
-  }
-  .career-1 ul {
-    padding-left: 20px;
-    line-height: 23px;
-    font-size: 16px;
-  }
+@media screen and (max-width: 400px) {
   .contact-top {
-    background-attachment: scroll;
-    margin-top: 6rem;
-    padding: 35% 10% 25% 10%;
+    padding: 2rem 1rem;
+    background-size: contain;
   }
   .contact-top .container {
-    padding: 30px 40px;
+    margin: auto;
   }
   .contact-form .cover {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem;
+  }
+  .contact-top h1 {
+    font-size: 35px;
+  }
+  .contact-form .content h1 {
+    font-size: 30px;
   }
   .contact-form .container {
     width: 90%;
-    max-width: 90%;
-    padding: 15px 25px;
+    padding: 2rem;
   }
   form button[type="submit"] {
     width: 30%;
-  }
-  footer .row {
-    padding: 14px 0 3px 10px;
+    padding: .5rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

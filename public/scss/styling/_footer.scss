@@ -1,14 +1,10 @@
 /* -----footer----- */
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: url(/photos/footer-back.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 1vmin 0vmin 0.5vmin 0vmin;
-  /* margin-top: 2rem; */
+//   background: url(/photos/footer-back.png);
+//   background-position: center;
+//   background-size: cover;
+//   background-attachment: fixed;
 }
 
 footer .row {
@@ -53,4 +49,14 @@ footer a:hover {
 footer p {
   margin-bottom: 4px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 390px) {
+    .pages-links {
+        display: none;
+    }
+    footer .row {
+        padding: 1rem;
+        
+    }
 }
