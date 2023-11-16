@@ -2,201 +2,199 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <!-- link pages with jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="module" src="./public/js/nav-links.js"></script>
-    <script type="module" src="./public/js/contact.js"></script>
-    <!-- stylesheet css-->
-    <link rel="stylesheet" href="./public/scss/style.css">
-    <link rel="icon" href="./photos/logo.png" />
-    <title>Contact - Precious Amber International</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- link pages with jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="module" src="./public/js/nav-links.js"></script>
+  <script type="module" src="./public/js/contact.js"></script>
+  <!-- stylesheet css-->
+  <link rel="stylesheet" href="./public/scss/style.css">
+  <link rel="icon" href="./photos/logo.png" />
+  <title>Contact - Precious Amber International</title>
 </head>
 
 <body>
-    <header>
-        <!-- <my-nav-contact></my-nav-contact>   -->
-        <nav class="navbar navbar-expand-md navbar-light" id="navbar">
-            <div class="container-fluid p-0">
-                <a class="navbar-brand" id="logo" href="/">
-                    <img src="../photos/logo.png" alt="logo" width="70" class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <div class="mr-auto"></div>
-                    <!-- nav pages -->
-                    <ul class="navbar-nav text-center">
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="values.html">Our Values</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable" href="career.html">Career</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hoverable active" href=contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- contact-top -->
-        <section class="contact-top">
-            <div class="container text-center" id="fade">
-                <div>
-                    <h1>Ready to Start Investing in Your Future?</h1>
-                    <a class="my-btn btn-back scroll-to-contact" href="#" address="true">TAKE ME THERE</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- scroll to here -->
-        <div class="contact"></div>
-
-        <!-- contact-form -->
-        <section class="contact-form" id="contact-here">
-            <div class="cover">
-                <div class="content text-center">
-                    <!-- <h6>Contact Us</h6> -->
-                    <h1>Get In Touch</h1>
-                </div>
-                <div class="container">
-                    <p>For further queries, please leave us a message and we will get back to you
-                        soonest possible.
-                    </p>
-                    <form action="https://formspree.io/f/xbjqarpz" method="POST" enctype="multipart/form-data"
-                        id="my-form">
-                        <div class="form-group">
-                            <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" autocomplete=true required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
-                        </div>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-                <div id="status"></div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row text-left">
-                <div class="pages-links col-3">
-                    <h4>Browse Our Pages</h4>
-                    <ul>
-                        <li>
-                            <p><a href="/">Home</a></p>
-                        </li>
-                        <li>
-                            <p><a href="about.html">About Us</a></p>
-                        </li>
-                        <li>
-                            <p><a href="values.html">Our Values</a></p>
-                        </li>
-                        <li>
-                            <p><a href="events.html">Events</a></p>
-                        </li>
-                        <li>
-                            <p><a href="career.html">Career</a></p>
-                        </li>
-                        <li>
-                            <p><a href="contact.html">Contact Us</a></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <h4>Visit Our Offices</h4>
-                    <h6>MALAYSIA</h6>
-                    <p>
-                        A4-3-6, Level 3, Block A4, <br />Solaris Dutamas, Jalan Dutamas 1, <br />50480 Kuala Lumpur,
-                        Malaysia. <br /><span>Tel: +603-6413 3966</span>
-                    </p>
-                    <h6>SINGAPORE</h6>
-                    <p>9 Raffles Place, #26-01, Republic Plaza, 048619 Singapore.</p>
-                </div>
-                <div class="col small-links">
-                    <div class="row">
-                        <div class="col-5">
-                            <h4>Links</h4>
-                            <p>
-                                <a href="https://www.5pillarsventures.com/" target="_blank">5 Pillars Ventures</a>
-                            </p>
-                            <p>
-                                <a href="https://www.astuteprinciple.com/" target="_blank">Astute Principle</a>
-                            </p>
-                            <p>
-                                <a href="http://www.redoakgrp.com/" target="_blank">Red Oak Capital</a>
-                            </p>
-                        </div>
-                        <div class="col">
-                            Check out our latest featured news:
-                            <ul>
-                                <li>
-                                    <a href="https://www.utusan.com.my/ringgit/2023/10/pai-tawar-rm600-juta-saham-keutamaan-boleh-tebus/"
-                                        target="_blank">UM</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.getaran.my/artikel/usahawan/53451/pai-berhad-tawarkan-pulangan-saham-sehingga-12-peratus-setahun"
-                                        target="_blank">Getaran</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="text-center mt-2">
-                Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                Precious Amber International
-            </p>
+  <header>
+    <!-- <my-nav-contact></my-nav-contact>   -->
+    <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" id="logo" href="/">
+          <img src="../photos/logo.png" alt="logo" width="70" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="mr-auto"></div>
+          <!-- nav pages -->
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="values.html">Our Values</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="career.html">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable active" href=contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
 
-    <script src="./public/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  <main>
+    <!-- contact-top -->
+    <section class="contact-top">
+      <div class="container text-center" id="fade">
+        <div>
+          <h1>Ready to Start Investing in Your Future?</h1>
+          <a class="my-btn btn-back scroll-to-contact" href="#" address="true">TAKE ME THERE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- scroll to here -->
+    <div class="contact"></div>
+
+    <!-- contact-form -->
+    <section class="contact-form" id="contact-here">
+      <div class="cover">
+        <div class="content text-center">
+          <!-- <h6>Contact Us</h6> -->
+          <h1>Get In Touch</h1>
+        </div>
+        <div class="container">
+          <p>For further queries, please leave us a message and we will get back to you
+            soonest possible.
+          </p>
+          <form action="https://formspree.io/f/xbjqarpz" method="POST" enctype="multipart/form-data" id="my-form">
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" autocomplete=true required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-left">
+        <div class="pages-links col-3">
+          <h4>Browse Our Pages</h4>
+          <ul>
+            <li>
+              <p><a href="/">Home</a></p>
+            </li>
+            <li>
+              <p><a href="about.html">About Us</a></p>
+            </li>
+            <li>
+              <p><a href="values.html">Our Values</a></p>
+            </li>
+            <li>
+              <p><a href="events.html">Events</a></p>
+            </li>
+            <li>
+              <p><a href="career.html">Career</a></p>
+            </li>
+            <li>
+              <p><a href="contact.html">Contact Us</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h4>Visit Our Offices</h4>
+          <h6>MALAYSIA</h6>
+          <p>
+            A4-3-6, Level 3, Block A4, <br />Solaris Dutamas, Jalan Dutamas 1, <br />50480 Kuala Lumpur,
+            Malaysia. <br /><span>Tel: +603-6413 3966</span>
+          </p>
+          <h6>SINGAPORE</h6>
+          <p>100 Peck Seah Street, #08-08 PS100, Singapore 07933</p>
+        </div>
+        <div class="col small-links">
+          <div class="row">
+            <div class="col-5">
+              <h4>Links</h4>
+              <p>
+                <a href="https://www.5pillarsventures.com/" target="_blank">5 Pillars Ventures</a>
+              </p>
+              <p>
+                <a href="https://www.astuteprinciple.com/" target="_blank">Astute Principle</a>
+              </p>
+              <p>
+                <a href="http://www.redoakgrp.com/" target="_blank">Red Oak Capital</a>
+              </p>
+            </div>
+            <div class="col">
+              Check out our latest featured news:
+              <ul>
+                <li>
+                  <a href="https://www.utusan.com.my/ringgit/2023/10/pai-tawar-rm600-juta-saham-keutamaan-boleh-tebus/"
+                    target="_blank">UM</a>
+                </li>
+                <li>
+                  <a href="https://www.getaran.my/artikel/usahawan/53451/pai-berhad-tawarkan-pulangan-saham-sehingga-12-peratus-setahun"
+                    target="_blank">Getaran</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-2">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Precious Amber International
+      </p>
+    </div>
+  </footer>
+
+  <script src="./public/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

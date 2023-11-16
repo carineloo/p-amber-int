@@ -5,8 +5,11 @@
 }
 
 .events-top {
-    margin-top: 160px;
-    margin-bottom: 2rem;
+    background: url(/photos/orange-back.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 6.2rem;
+    padding: 5rem 0;
 }
 
 .event-title {
@@ -17,7 +20,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 3rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .vid1 {
@@ -67,9 +70,11 @@
         margin: .75rem 2rem;
     }
 }
+
 @media screen and (max-width: 400px) {
     .events-top {
-        margin-top: 110px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         display: flex;
         justify-content: center;
     }
