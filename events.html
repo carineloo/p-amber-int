@@ -74,54 +74,36 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
+              <p>Official Launching of IM3</p>
             </div>
           </div>
         </div>
       </section>
-
-      <div class="lodgements">
-        <!-- events -->
-        <div class="text-center">
-          <h5>-2023-</h5>
-        </div>
-
-        <section class="events-1">
-          <div class="notice">
-            <div class="event-title-1">
-              <h5>SC Lodgement - October 2023</h5>
-            </div>
-            <img src="./photos/Securities Commission Malaysia.jpg" alt="">
-          </div>
-        </section>
-
-        <div class="text-center">
-          <h5>-2021-</h5>
-        </div>
-
-        <section class="events-1">
-          <div class="notice">
-            <div class="event-title-1">
-              <h5>SC Lodgement - July2021</h5>
-            </div>
-            <img src="./photos/SC Lodgement - July2021.png" alt="">
-          </div>
-        </section>
-
-        <div class="text-center">
-          <h5>-2020-</h5>
-        </div>
-
-        <section class="events-1">
-          <div class="notice">
-            <div class="event-title-1">
-              <h5>SC Lodgement - Jan2020</h5>
-            </div>
-            <img src="./photos/SC Lodgement - Jan2020.jpg" alt="">
-          </div>
-        </section>
-      </div>
     </div>
 
+    <div class="events-content">
+      <section class="lodgements">
+        <button type="button" class="collapsible">SC Lodgement - October 2023</button>
+        <div class="content">
+          <div class="photo">
+            <img src="./photos/Securities Commission Malaysia.jpg" alt="Image 1">
+          </div>
+        </div>
+
+        <button type="button" class="collapsible">SC Lodgement - July2021</button>
+        <div class="content">
+          <div class="photo">
+            <img src="./photos/SC Lodgement - July2021.png" alt="Image 2">
+          </div>
+        </div>
+
+        <button type="button" class="collapsible">SC Lodgement - Jan2020</button>
+        <div class="content">
+          <div class="photo">
+            <img src="./photos/SC Lodgement - Jan2020.jpg" alt="Image 3">
+          </div>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -179,7 +161,7 @@
               <ul>
                 <li>
                   <a href="https://www.utusan.com.my/ringgit/2023/10/pai-tawar-rm600-juta-saham-keutamaan-boleh-tebus/"
-                    target="_blank">UM</a>
+                    target="_blank">Utusan</a>
                 </li>
                 <li>
                   <a href="https://www.getaran.my/artikel/usahawan/53451/pai-berhad-tawarkan-pulangan-saham-sehingga-12-peratus-setahun"
@@ -200,6 +182,23 @@
     </div>
   </footer>
 
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
   <script src="./public/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -210,7 +209,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
