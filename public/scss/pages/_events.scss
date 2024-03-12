@@ -5,7 +5,7 @@
 }
 
 .events-top {
-    background: url(/photos/orange-back.jpg) no-repeat;
+    background: url(/public/img/orange-back.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin-top: 6.2rem;
@@ -39,6 +39,34 @@
     height: 400px;
 }
 
+/* -----images----- */
+
+.row-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-images {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-images img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+// two columns images
+@media screen and (max-width: 800px) {
+  .column-images {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
 /* -----events-1----- */
 

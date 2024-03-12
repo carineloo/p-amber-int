@@ -1,7 +1,7 @@
 /* index-top */
 
 .index-top {
-    background: url(/photos/orange-back.jpg) no-repeat;
+    background: url(/public/img/orange-back.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin-top: 6.2rem;
@@ -23,8 +23,7 @@
 .hero h1 {
     font-size: 350%;
     margin: 0 0.8rem;
-    background-image: url(/photos/index-title-back.jpeg);
-    //   background-position: center;
+    background-image: url(/public/img/index-title-back.jpeg);
     background-size: cover;
     -webkit-background-clip: text;
     color: transparent;

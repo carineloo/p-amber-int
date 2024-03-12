@@ -311,7 +311,7 @@ footer .col {
 
 /* index-top */
 .index-top {
-  background: url(/photos/orange-back.jpg) no-repeat;
+  background: url(/public/img/orange-back.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 6.2rem;
@@ -333,7 +333,7 @@ footer .col {
 .hero h1 {
   font-size: 350%;
   margin: 0 0.8rem;
-  background-image: url(/photos/index-title-back.jpeg);
+  background-image: url(/public/img/index-title-back.jpeg);
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
@@ -411,7 +411,7 @@ footer .col {
 }
 
 .about-top {
-  background: url(/photos/orange-back.jpg);
+  background: url(/public/img/orange-back.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-top: 100px;
@@ -638,7 +638,7 @@ footer .col {
 }
 
 .values-top {
-  background: url(/photos/orange-back.jpg);
+  background: url(/public/img/orange-back.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-top: 100px;
@@ -694,7 +694,7 @@ footer .col {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(/photos/values-main-2.jpeg) no-repeat;
+  background: url(/public/img/values-main-2.jpeg) no-repeat;
   background-position: 50% 0;
   background-size: cover;
   border-radius: 3px;
@@ -782,7 +782,7 @@ footer .col {
 }
 
 .events-top {
-  background: url(/photos/orange-back.jpg) no-repeat;
+  background: url(/public/img/orange-back.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 6.2rem;
@@ -814,6 +814,33 @@ footer .col {
   justify-content: center;
   margin: 1rem 0;
   height: 400px;
+}
+
+/* -----images----- */
+.row-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-images {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-images img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column-images {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /* -----events-1----- */
@@ -897,7 +924,7 @@ footer .col {
 
 /* -----career-top----- */
 .career-top {
-  background: url(/photos/orange-back.jpg);
+  background: url(/public/img/orange-back.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-top: 100px;
@@ -993,7 +1020,7 @@ footer .col {
 
 /* -----contact-top----- */
 .contact-top {
-  background: url(/photos/orange-back.jpg);
+  background: url(/public/img/orange-back.jpg);
   background-attachment: fixed;
   background-size: cover;
   margin-top: 100px;
