@@ -39,34 +39,31 @@
     height: 400px;
 }
 
+
 /* -----images----- */
 
-.row-images {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.image-slide {
+    display: flex;
+    justify-content: center;
 }
 
-/* Create four equal columns that sits next to each other */
-.column-images {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.carousel {
+    margin: 1rem 2rem 0 2rem;
+    width: 60%;
 }
 
-.column-images img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.carousel-indicators [data-bs-target] {
+    background-color: black;
 }
 
 // two columns images
 @media screen and (max-width: 800px) {
-  .column-images {
-    flex: 50%;
-    max-width: 50%;
-  }
+    .carousel {
+        margin: 0;
+        width: 80%;
+    }
 }
+
 
 /* -----events-1----- */
 
@@ -122,9 +119,9 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .lodgements .content {
-    width: 100%;
-  }
+    .lodgements .content {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -144,7 +141,7 @@
         height: 200px;
     }
     .events-content {
-      padding: .25rem;
-      padding-top: 0;
+        padding: .25rem;
+        padding-top: 0;
     }
 }
